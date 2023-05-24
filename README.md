@@ -7,7 +7,7 @@
 
 Dynosaur: A Dynamic Growth Paradigm for Instruction-Tuning Data Curation
 -----------------------------
-<h3> |<a href=""> Paper </a> | 
+<h3> |<a href="https://arxiv.org/abs/2305.14327"> Paper </a> | 
 <a href="https://dynosaur-it.github.io/"> Project Website </a> |
 <a href="https://dynosaur.s3.us-west-1.amazonaws.com/dynosaur-full.json"> 🤗 Data </a> |  
 <a href=""> 🤗 Model </a> |
