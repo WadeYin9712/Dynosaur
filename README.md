@@ -97,7 +97,7 @@ If you find this work is relevant with your research, please feel free to cite o
 @article{yin2023dynosaur,
   title={Dynosaur: A Dynamic Growth Paradigm for Instruction-Tuning Data Curation},
   author={Yin, Da and Liu, Xiao and Yin, Fan and Zhong, Ming and Bansal, Hritik and Han, Jiawei and Chang, Kai-Wei},
-  journal={arXiv preprint arXiv:2305.},
+  journal={arXiv preprint arXiv:2305.14327},
   year={2023}
 }
 ```
