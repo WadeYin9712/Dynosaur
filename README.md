@@ -12,6 +12,9 @@ Dynosaur: A Dynamic Growth Paradigm for Instruction-Tuning Data Curation
 <a href=""> 🤗 Data </a> |  
 <a href=""> 🤗 Model </a> |
 </h3>
+<h4>
+  <a href="https://wadeyin9712.github.io/">Da Yin</a>*, <a href="https://scholar.google.com/citations?user=c3bdW2IAAAAJ&hl=en">Xiao Liu</a>*, <a href="https://fanyin3639.github.io/">Fan Yin</a>*, <a href="https://maszhongming.github.io/">Ming Zhong</a>*, <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a>, <a href="http://hanj.cs.illinois.edu/">Jiawei Han</a>, <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>)
+</h4>
 </div>
 
 Dynosaur aims to 1) build a dynamically growing instruction tuning dataset without low cost for maintenance, and 2) provide a venue to study how to dynamically improve instruction tuning models. The repo contains:
