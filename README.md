@@ -9,11 +9,11 @@ Dynosaur: A Dynamic Growth Paradigm for Instruction-Tuning Data Curation
 -----------------------------
 <h3> |<a href="https://arxiv.org/abs/2305.14327"> Paper </a> | 
 <a href="https://dynosaur-it.github.io/"> Project Website </a> |
-<a href="https://dynosaur.s3.us-west-1.amazonaws.com/dynosaur-full.json"> 🤗 Data </a> |  
-<a href=""> 🤗 Model </a> |
+<a href="https://huggingface.co/datasets?search=dynosaur"> 🤗 Data </a> |  
+<a href="https://huggingface.co/models?sort=trending&search=dynosaur"> 🤗 Model </a> |
 </h3>
 <h4>
-  <a href="https://wadeyin9712.github.io/">Da Yin</a>*, <a href="https://scholar.google.com/citations?user=c3bdW2IAAAAJ&hl=en">Xiao Liu</a>*, <a href="https://fanyin3639.github.io/">Fan Yin</a>*, <a href="https://maszhongming.github.io/">Ming Zhong</a>*, <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a>, <a href="http://hanj.cs.illinois.edu/">Jiawei Han</a>, <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
+  <a href="https://wadeyin9712.github.io/">Da Yin</a>*, <a href="https://xxxiaol.github.io/">Xiao Liu</a>*, <a href="https://fanyin3639.github.io/">Fan Yin</a>*, <a href="https://maszhongming.github.io/">Ming Zhong</a>*, <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a>, <a href="http://hanj.cs.illinois.edu/">Jiawei Han</a>, <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>
 </h4>
 </div>
 
@@ -27,7 +27,8 @@ Dynosaur aims to 1) build a dynamically growing instruction tuning dataset witho
 **Usage and License Notices**: All the generated task instructions (except the instances of each task) are released under Apache-2.0 license. The instances of each tasks are subject to the license under which the original dataset was released. These license information are available in Dynosaur data and [`instruction_data/license_info.json`](./instruction_data/license_info.json).
 
 ## Updates
-- Dynosaur v0 is here! Dynosaur-full data, metadata collection method and instruction generation code are released! Will upload them to Huggingface soon!
+- Jul 6, 2023: Dynosaur v1 is coming! `Dynosaur-full` and `Dynosaur-sub-superni` are released at 🤗 [Huggingface Datasets](https://huggingface.co/datasets?search=dynosaur). T5-3B and LLAMA-7B fine-tuned with Dynosaur are released at 🤗 [Huggingface Models](https://huggingface.co/models?sort=trending&search=dynosaur).
+- May 23, 2023: Dynosaur v0 is here! Dynosaur-full data, metadata collection method and instruction generation code are released! Will upload them to Huggingface soon!
 
 ## Overview
 
@@ -40,7 +41,7 @@ Dynosaur offers several advantages, including
 
 ## Data Release
 
-We offer [`dynosaur-full.json`](https://dynosaur.s3.us-west-1.amazonaws.com/dynosaur-full.json), containing all the generated instruction tuning data in Dynosaur. It covers most licensed and non-null English datasets in 🤗 Huggingface Datasets as of Feb 23, 2023.
+We offer [`dynosaur-full`](https://huggingface.co/datasets/Dynosaur/dynosaur-full), containing all the generated instruction tuning data in Dynosaur. It covers most licensed and non-null English datasets in 🤗 Huggingface Datasets as of Feb 23, 2023.
 The data is a dictionary containing the following keys:
 
 - `instruction`: `str`, describes task instructions 
@@ -54,7 +55,7 @@ We also provide the collected metadata [`huggingface_metadata.jsonl`](https://dy
 
 ## Data Generation Process
 
-To generate Dynosaur-full, please follow the following commands step by step:
+To generate `Dynosaur-full`, please follow the following commands step by step:
 
 ### Metadata Collection
 ```
@@ -71,7 +72,7 @@ python generate_tasks_without_description.py                  # generation descr
 python filter_invalid_tasks.py                                # filter out invalid tasks
 python organize_data.py                                       # organize instruction data
 ```
-These result in the instruction data [`instruction_data/instruction-full.json`](./instruction_data/instruction-full.json) and instruction tuning dataset [`dynosaur-full.json`](https://dynosaur.s3.us-west-1.amazonaws.com/dynosaur-full.json). We will provide the sampled data for evaluation on Super-NI and user instructions soon.
+These result in the instruction data [`instruction_data/instruction-full.json`](./instruction_data/instruction-full.json) and instruction tuning dataset [`dynosaur-full`](https://huggingface.co/datasets/Dynosaur/dynosaur-full). We will provide the sampled data for evaluation on Super-NI and user instructions soon.
 
 ## Fine-tuning
 
