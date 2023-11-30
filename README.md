@@ -27,7 +27,8 @@ Dynosaur aims to 1) build a dynamically growing instruction tuning dataset witho
 **Usage and License Notices**: All the generated task instructions (except the instances of each task) are released under Apache-2.0 license. The instances of each tasks are subject to the license under which the original dataset was released. These license information are available in Dynosaur data and [`instruction_data/license_info.json`](./instruction_data/license_info.json).
 
 ## Updates
-- Oct 10, 2023: Dynosaur is accepted at EMNLP 2023! See you in Singapore!
+- Nov 30, 2023: We release the Dynosaur training data for Longform evaluation at 🤗 [Huggingface Datasets]().
+- Oct 10, 2023: Dynosaur is accepted at EMNLP 2023! We update Dynosaur performance on Longform in the camera-ready version. See you in Singapore!
 - Jul 6, 2023: Dynosaur v1 is coming! `Dynosaur-full` and `Dynosaur-sub-superni` are released at 🤗 [Huggingface Datasets](https://huggingface.co/datasets?search=dynosaur). T5-3B and LLAMA-7B fine-tuned with Dynosaur are released at 🤗 [Huggingface Models](https://huggingface.co/models?sort=trending&search=dynosaur).
 - May 23, 2023: Dynosaur v0 is here! Dynosaur-full data, metadata collection method and instruction generation code are released! Will upload them to Huggingface soon!
 
